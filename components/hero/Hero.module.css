@@ -11,6 +11,8 @@
 		url('../../public/img/hero-section-bg.png');
 	background-size: cover;
 	background-position: center center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
 }
 
 .greetings {

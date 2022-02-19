@@ -1,5 +1,6 @@
 import classes from './Hero.module.css';
 import Navbar from '../navbar/Navbar';
+import Sidebar from '../sidebar/Sidebar';
 
 const Hero = () => {
 	return (
@@ -28,6 +29,7 @@ const Hero = () => {
 					</svg>
 				</button>
 			</div>
+			<Sidebar />
 		</section>
 	);
 };
