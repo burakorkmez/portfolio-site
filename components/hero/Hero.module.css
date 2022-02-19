@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600;700&display=swap');
+
+.hero {
+	height: 100vh;
+	width: 100%;
+	background-image: linear-gradient(
+			to top,
+			rgba(62, 66, 68, 0.519) 0%,
+			rgba(30, 34, 36, 0.59) 100%
+		),
+		url('../../public/img/hero-section-bg.png');
+	background-size: cover;
+	background-position: center center;
+}
+
+.greetings {
+	color: var(--primary-color);
+	font-size: 1.6rem;
+	font-weight: 300;
+	word-spacing: 5px;
+	font-family: 'Roboto Mono', monospace;
+}
+
+.author,
+.connect {
+	font-size: 9.6rem;
+	font-weight: 600;
+}
+
+.connect {
+	margin-top: 2rem;
+	opacity: 0.45;
+}
+
+.welcome {
+	opacity: 0.7;
+	font-size: 1.6rem;
+	margin-top: 3rem;
+	font-weight: 300;
+}
+
+.discover-btn {
+	display: flex;
+	align-items: center;
+	margin-top: 4rem;
+	color: #fff;
+	border: 2px solid currentColor;
+	text-transform: uppercase;
+	font-size: 1.6rem;
+	font-weight: 600;
+	letter-spacing: 0.8rem;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+.discover-btn:hover {
+	background-color: var(--primary-color);
+	border: 2px solid transparent;
+}
