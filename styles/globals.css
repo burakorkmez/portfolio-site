@@ -58,3 +58,12 @@ ul {
 .mt-xl {
 	margin-top: 10rem;
 }
+
+.text-center {
+	text-align: center;
+}
+
+.vertical-line {
+	font-size: 4rem;
+	color: var(--primary-color);
+}
