@@ -1,0 +1,66 @@
+.contact {
+	padding: 15rem 2rem;
+	background-color: #1e2925;
+	text-align: center;
+}
+
+.wrapper {
+	box-shadow: 0 0 8rem #000;
+	padding: 5rem 0;
+	border-radius: 5px;
+}
+
+.contact .title {
+	color: var(--primary-color);
+	font-size: 1.6rem;
+	text-transform: uppercase;
+	margin-bottom: 1rem;
+	letter-spacing: 2px;
+}
+
+.contact .wrapper .subtitle {
+	font-size: 5.6rem;
+	opacity: 0.6;
+	font-weight: 400;
+}
+
+.contact .wrapper .content {
+	width: 50%;
+	font-size: 1.7rem;
+	margin: 0 auto;
+	opacity: 0.6;
+	line-height: 1.5;
+	margin-bottom: 5rem;
+	font-weight: 300;
+}
+
+.btn-email {
+	font-family: inherit;
+	font-size: 1.6rem;
+	letter-spacing: 1px;
+	border: 1px solid var(--primary-color);
+	border-radius: 8px;
+	transition: all 0.3s;
+	padding: 1rem 3.2rem;
+	color: var(--primary-color);
+}
+
+.btn-email:hover {
+	background-color: #334740;
+}
+
+.author {
+	display: block;
+	margin-top: 10rem;
+	font-size: 1.4rem;
+	font-weight: 300;
+	transition: 0.3s ease-in-out;
+	opacity: 0.6;
+	backface-visibility: hidden;
+	font-family: 'Roboto Mono', monospace;
+}
+
+.author:hover {
+	opacity: 1;
+	color: #9ce4dc;
+}
