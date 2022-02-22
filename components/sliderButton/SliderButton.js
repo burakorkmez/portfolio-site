@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faRightLong, faLeftLong } from '@fortawesome/free-solid-svg-icons';
 
 export default function BtnSlider({ direction, moveSlide }) {
-	console.log(direction);
 	return (
 		<button
 			onClick={moveSlide}

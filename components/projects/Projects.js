@@ -1,21 +1,53 @@
-import classes from './Projects.module.css';
-import { mainProjects } from '../../data/projects-data';
-import Project from './Project';
+// import swiper
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper';
 
-const Projects = () => {
+import classes from './Projects.module.css';
+
+const MainProject = ({ project, index }) => {
+	const pagination = {
+		pagination: true,
+		clickable: true,
+	};
+
 	return (
-		<section className={classes['projects-section']}>
-			<div className="container">
-				<h2 className={`text-center ${classes['projects-title']}`}>
-					Some projects I&apos;ve built
-				</h2>
-				<div className="vertical-line text-center">|</div>
-				{mainProjects.map((project, i) => (
-					<Project project={project} key={i} index={i} />
-				))}
+		<div className={`container ${classes['project-container']}`}>
+			<div
+				className={`${classes.left} ${
+					project.id % 2 === 0 ? classes.reversed : ''
+				}`}
+			>
+				<Swiper
+					cssMode={true}
+					navigation={true}
+					pagination={pagination}
+					mousewheel={true}
+					keyboard={true}
+					modules={[Navigation, Pagination, Mousewheel, Keyboard]}
+					className="mySwiper"
+				>
+					{project.imgs.map((url, i) => (
+						<SwiperSlide key={i}>
+							<img src={url} alt="" />
+						</SwiperSlide>
+					))}
+				</Swiper>
 			</div>
-		</section>
+			<div
+				className={`${classes.right} ${
+					project.id % 2 === 0 ? classes.reversed : ''
+				}`}
+			>
+				<h2 className={classes['project-title']}>{project.title}</h2>
+				<div className={classes.desc}>{project.desc}</div>
+				<div className={classes['built-with']}>
+					{project.builtWith.map((item, i) => (
+						<span key={i}>{item}</span>
+					))}
+				</div>
+			</div>
+		</div>
 	);
 };
 
-export default Projects;
+export default MainProject;

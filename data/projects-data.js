@@ -2,9 +2,9 @@ export const mainProjects = [
 	{
 		id: 1,
 		imgs: [
+			'/img/projects-imgs/netflix-clone/desktop.png',
 			'/img/projects-imgs/netflix-clone/register.png',
 			'/img/projects-imgs/netflix-clone/movies.png',
-			'/img/projects-imgs/netflix-clone/list.png',
 		],
 		title: 'Netflix Clone',
 		desc: 'A React based movie app that mimics the netflix. Allows user to add profile image, change email address and username. Most importantly, user can watch trailers and get related data for movies and series.',
@@ -30,7 +30,7 @@ export const mainProjects = [
 			'/img/projects-imgs/binterest/create.png',
 		],
 		title: 'Binterest',
-		desc: 'A photo sharing app just like Pinterest but it is called Binterest. Uses sanity for backend. Users can share, delete and save photos and also comment. Authentication is handled by google oauth system. ',
+		desc: 'A photo sharing app just like Pinterest but it is called Binterest. Uses sanity for backend. Users can share, delete and save photos and also comment. Authentication is handled by Google OAuth system. ',
 
 		builtWith: ['React', 'Sanity', 'Tailwind'],
 	},

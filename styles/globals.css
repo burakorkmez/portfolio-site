@@ -2,6 +2,7 @@
 
 :root {
 	--primary-color: #e6bd8f;
+	--swiper-theme-color: #e6bd8f;
 }
 
 * {
@@ -17,7 +18,7 @@ html {
 
 body {
 	font-family: 'Source Sans Pro', sans-serif;
-	color: #fff;
+	color: #fff !important;
 }
 
 a {
@@ -30,6 +31,7 @@ ul {
 }
 
 .container {
+	width: 100%;
 	max-width: 1100px;
 	margin: 0 auto;
 }
