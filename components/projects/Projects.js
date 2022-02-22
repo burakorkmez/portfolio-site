@@ -1,53 +1,29 @@
-// import swiper
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper';
-
 import classes from './Projects.module.css';
+import { mainProjects, otherProjects } from '../../data/projects-data';
+import MainProject from './MainProject';
+import OtherProject from './OtherProject';
 
-const MainProject = ({ project, index }) => {
-	const pagination = {
-		pagination: true,
-		clickable: true,
-	};
-
+const Projects = () => {
 	return (
-		<div className={`container ${classes['project-container']}`}>
-			<div
-				className={`${classes.left} ${
-					project.id % 2 === 0 ? classes.reversed : ''
-				}`}
-			>
-				<Swiper
-					cssMode={true}
-					navigation={true}
-					pagination={pagination}
-					mousewheel={true}
-					keyboard={true}
-					modules={[Navigation, Pagination, Mousewheel, Keyboard]}
-					className="mySwiper"
-				>
-					{project.imgs.map((url, i) => (
-						<SwiperSlide key={i}>
-							<img src={url} alt="" />
-						</SwiperSlide>
-					))}
-				</Swiper>
-			</div>
-			<div
-				className={`${classes.right} ${
-					project.id % 2 === 0 ? classes.reversed : ''
-				}`}
-			>
-				<h2 className={classes['project-title']}>{project.title}</h2>
-				<div className={classes.desc}>{project.desc}</div>
-				<div className={classes['built-with']}>
-					{project.builtWith.map((item, i) => (
-						<span key={i}>{item}</span>
+		<section className={classes['projects-section']}>
+			<div className="container">
+				<h2 className={`text-center secondary-heading`}>
+					Some projects I&apos;ve built
+				</h2>
+				<div className="vertical-line text-center">|</div>
+				{mainProjects.map((project, i) => (
+					<MainProject project={project} key={i} index={i} />
+				))}
+				<h2 className={`text-center secondary-heading`}>Other projects</h2>
+				<div className="vertical-line text-center">|</div>
+				<div className={classes['other-project-container']}>
+					{otherProjects.map((project, i) => (
+						<OtherProject project={project} key={i} />
 					))}
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 };
 
-export default MainProject;
+export default Projects;

@@ -35,3 +35,32 @@ export const mainProjects = [
 		builtWith: ['React', 'Sanity', 'Tailwind'],
 	},
 ];
+
+export const otherProjects = [
+	{
+		id: 1,
+		img: '/img/projects-imgs/other-projects/blog.png',
+		title: 'Personal Blog',
+		desc: "Minimal looking blog app which I've built for myself to share some posts releated to web dev.",
+		builtWith: ['Next.js', 'Markdown', 'MongoDB'],
+		demo: 'https://burakorkmez.blog/',
+	},
+	{
+		id: 2,
+		img: '/img/projects-imgs/other-projects/github.png',
+		title: 'Github User Finder',
+		desc: 'A web app that helps to find the searched github account.',
+		builtWith: ['React', 'Bootstrap'],
+		demo: 'https://githubsusers.netlify.app/',
+		github: 'https://github.com/burakorkmez/github-user-finder',
+	},
+	{
+		id: 3,
+		img: '/img/projects-imgs/other-projects/covid.png',
+		title: 'Covid-19 Dashboard',
+		desc: "Want to learn covid situation of the world? Then don't look any further.",
+		builtWith: ['React', 'Covid Api'],
+		demo: 'https://coronaanalyzer.netlify.app/',
+		github: 'https://github.com/burakorkmez/covid-19-dashboard',
+	},
+];
