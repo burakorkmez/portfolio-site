@@ -2,7 +2,12 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faLink } from '@fortawesome/free-solid-svg-icons';
+
 import classes from './Projects.module.css';
+import Link from 'next/link';
 
 const MainProject = ({ project }) => {
 	const pagination = {
@@ -40,6 +45,27 @@ const MainProject = ({ project }) => {
 			>
 				<h2 className={classes['project-title']}>{project.title}</h2>
 				<div className={classes.desc}>{project.desc}</div>
+				<div>
+					{project.demo && (
+						<span className={classes.icon}>
+							<Link href={project.demo} passHref>
+								<a target="_blank">
+									<FontAwesomeIcon icon={faLink} />
+								</a>
+							</Link>
+						</span>
+					)}
+
+					{project.github && (
+						<span className={classes.icon}>
+							<Link href={project.github} passHref>
+								<a target="_blank">
+									<FontAwesomeIcon icon={faGithub} />
+								</a>
+							</Link>
+						</span>
+					)}
+				</div>
 				<div className={classes['built-with']}>
 					{project.builtWith.map((item, i) => (
 						<span key={i}>{item}</span>

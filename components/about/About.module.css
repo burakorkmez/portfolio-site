@@ -8,6 +8,7 @@
 	grid-template-columns: 35fr 65fr;
 	gap: 5rem;
 	justify-content: center;
+	position: relative;
 }
 
 .about .author-picture {
@@ -29,9 +30,9 @@
 }
 
 .about .about-author {
-	/* padding: 0 2rem; */
 	width: 90%;
 }
+
 .about .about-author .title {
 	text-transform: uppercase;
 	color: var(--primary-color);
@@ -76,4 +77,80 @@
 }
 .about .about-author .overview span {
 	font-weight: 300;
+}
+
+/* media queries */
+@media (max-width: 900px) {
+	.about .about-author .overview {
+		padding: 2rem 1rem;
+		font-size: 1.4rem;
+	}
+}
+
+@media (max-width: 840px) {
+	.about {
+		padding: 10rem 0 8rem;
+	}
+	.about-wrapper {
+		grid-template-columns: 1fr;
+	}
+
+	.about .author-picture {
+		width: 15rem;
+		height: 15rem;
+		border-radius: 50%;
+		margin-top: 10rem;
+	}
+
+	.about .author-picture img {
+		border-radius: 100%;
+	}
+
+	.about .about-author {
+		width: 70%;
+		margin: 0 auto;
+	}
+
+	.about .layout {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		text-align: center;
+	}
+
+	.about .about-author .title {
+		text-transform: uppercase;
+		color: var(--primary-color);
+		font-size: 1.4rem;
+		font-weight: 600;
+		letter-spacing: 1px;
+	}
+
+	.about .about-author h2 {
+		font-size: 2.6rem;
+		font-weight: 400;
+	}
+
+	.about .about-author hr {
+		margin: 0 auto;
+		width: 40%;
+	}
+	.about .about-author .desc {
+		text-align: center;
+		margin-top: 0;
+		width: 100%;
+	}
+
+	.about .about-author .overview {
+		padding: 2rem 0.5rem;
+		font-size: 1.3rem;
+	}
+}
+
+@media (max-width: 600px) {
+	.about .about-author .overview {
+		grid-template-columns: 1fr;
+		padding: 2rem 1rem;
+	}
 }

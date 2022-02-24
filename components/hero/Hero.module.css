@@ -1,5 +1,6 @@
 .hero {
-	height: 100vh;
+	/* height: 100vh; */
+	padding: 36rem 0;
 	width: 100%;
 	background-image: linear-gradient(
 			to top,
@@ -8,9 +9,19 @@
 		),
 		url('../../public/img/hero-section-bg.png');
 	background-size: cover;
-	background-position: center center;
-	background-attachment: fixed;
+	background-position: center;
 	background-repeat: no-repeat;
+	position: relative;
+}
+
+.hero .container {
+	width: 100%;
+	max-width: 1100px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 0 6rem;
 }
 
 .greetings {
@@ -55,4 +66,34 @@
 .discover-btn:hover {
 	background-color: var(--primary-color);
 	border: 2px solid transparent;
+}
+
+@media (max-width: 1200px) {
+	.author,
+	.connect {
+		font-size: 6.4rem;
+		font-weight: 600;
+	}
+	.discover-btn {
+		font-size: 1.3rem;
+		padding: 0.2rem 1rem;
+	}
+}
+
+@media (max-width: 768px) {
+	.author,
+	.connect {
+		font-size: 4.8rem;
+		font-weight: 600;
+	}
+	.discover-btn {
+		font-size: 1rem;
+		padding: 0.1rem 0.5rem;
+	}
+	.greetings {
+		font-size: 1.3rem;
+	}
+	.connect {
+		margin-top: 1rem;
+	}
 }

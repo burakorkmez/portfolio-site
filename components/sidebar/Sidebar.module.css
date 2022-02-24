@@ -4,6 +4,7 @@
 	bottom: 0;
 	width: 5rem;
 }
+
 .sidebar nav ul {
 	display: flex;
 	flex-direction: column;
@@ -45,4 +46,21 @@
 	background: #fff;
 	height: 8rem;
 	align-self: center;
+}
+
+@media (max-width: 968px) {
+	.sidebar .sidebar-list-item a::after {
+		width: 25px;
+		height: 25px;
+	}
+
+	.sidebar nav ul {
+		align-items: flex-start;
+	}
+	.sidebar .sidebar-list-item {
+		margin-left: 1rem;
+	}
+	.vertical-line {
+		display: none;
+	}
 }

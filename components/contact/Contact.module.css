@@ -64,3 +64,31 @@
 	opacity: 1;
 	color: #9ce4dc;
 }
+
+@media (max-width: 690px) {
+	.contact .wrapper .content {
+		width: 80%;
+	}
+	.contact .author {
+		margin-top: 5rem;
+	}
+}
+@media (max-width: 500px) {
+	.contact .wrapper .subtitle {
+		font-size: 4rem;
+	}
+	.contact .wrapper .content {
+		width: 90%;
+		padding: 0 0.3rem;
+		font-size: 1.4rem;
+		margin-bottom: 3rem;
+	}
+
+	.contact .wrapper .btn-email {
+		padding: 1rem 2rem;
+	}
+
+	.contact .author {
+		margin-top: 3rem;
+	}
+}

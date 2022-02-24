@@ -15,22 +15,22 @@ const Sidebar = () => {
 			<nav>
 				<ul>
 					<li className={classes['sidebar-list-item']}>
-						<a href="">
+						<a href="https://drive.google.com/file/d/1YYiQ4HErXJKgUAmTLNrWk3GbptZxayh-/view?usp=sharing">
 							<FontAwesomeIcon icon={faFile} style={{ color: '#363a50' }} />{' '}
 						</a>
 					</li>
 					<li className={classes['sidebar-list-item']}>
-						<a href="">
+						<a href="https://www.linkedin.com/in/burakork/">
 							<FontAwesomeIcon icon={faLinkedin} style={{ color: '#363a50' }} />
 						</a>
 					</li>
 					<li className={classes['sidebar-list-item']}>
-						<a href="">
+						<a href="https://github.com/burakorkmez">
 							<FontAwesomeIcon icon={faGithub} style={{ color: '#363a50' }} />
 						</a>
 					</li>
 					<li className={classes['sidebar-list-item']}>
-						<a href="">
+						<a href="https://instagram.com/burakorkmezz">
 							<FontAwesomeIcon
 								icon={faInstagram}
 								style={{ color: '#363a50' }}

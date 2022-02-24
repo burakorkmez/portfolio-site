@@ -1,16 +1,41 @@
+.header {
+	padding: 4rem;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 999;
+	transition: 0.3s ease-in-out;
+}
+
+.header.scrolled {
+	background-color: rgba(8, 8, 8, 0.815);
+	padding: 1rem 3rem;
+}
+
 .navbar-container {
 	max-width: 1300px;
 	margin: 0 auto;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 4rem 0;
+	padding: 1rem;
 }
 
 .logo {
-	font-size: 4rem;
+	font-size: 3.8rem;
 	color: var(--primary-color);
 	opacity: 0.89;
+}
+
+.hamburger {
+	display: none;
+}
+
+.hamburger-icon {
+	color: var(--primary-color);
+	font-size: 2.4rem;
+	cursor: pointer;
 }
 
 .navbar-container .navbar-list {
@@ -37,4 +62,78 @@
 
 .btn-resume:hover {
 	background-color: #334740;
+}
+
+@media (max-width: 1200px) {
+	.logo {
+		font-size: 3.2rem;
+	}
+
+	.navbar-container .navbar-list .navbar-list-item a {
+		font-size: 1.8rem;
+	}
+}
+@media (max-width: 768px) {
+	.header.open nav {
+		transition: all 0.5s ease-in;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		transform: translateY(0);
+		z-index: 999;
+		-webkit-backdrop-filter: blur(3px);
+		backdrop-filter: blur(3px);
+	}
+
+	.header .navbar-list {
+		transition: all 0.5s;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100vh;
+		transform: translateY(-100%);
+		flex-direction: column;
+		justify-content: center;
+		background-color: rgba(57, 87, 77, 0.801);
+	}
+
+	.header.open .navbar-list {
+		transform: translateY(0%);
+	}
+
+	.navbar-list-item {
+		margin: 1.6rem 0;
+		text-transform: uppercase;
+	}
+
+	.logo {
+		font-size: 2.4rem;
+	}
+
+	.hamburger {
+		display: block;
+		margin-left: auto;
+		z-index: 9999;
+	}
+
+	.header.open .hamburger {
+		position: fixed;
+		right: 5rem;
+	}
+
+	.navbar-container .navbar-list .navbar-list-item a {
+		font-size: 1.8rem;
+		letter-spacing: 1px;
+	}
+	.header.open .navbar-container .navbar-list .navbar-list-item a {
+		font-size: 2.5rem;
+		font-weight: 600;
+	}
+
+	.navbar-container .navbar-list .navbar-list-item:not(:last-child) {
+		margin-right: 1.6rem;
+	}
 }

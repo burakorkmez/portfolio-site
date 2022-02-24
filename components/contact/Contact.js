@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 const Contact = () => {
 	return (
-		<section className={classes.contact}>
+		<section className={classes.contact} id="contact">
 			<div className={`container ${classes.wrapper}`}>
 				<h2 className={classes.title}>What&apos;s next?</h2>
 				<h3 className={classes.subtitle}>Get In Touch</h3>

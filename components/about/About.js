@@ -1,16 +1,19 @@
+import { useEffect, useState } from 'react';
 import classes from './About.module.css';
 
 const About = () => {
 	return (
-		<section className={classes.about}>
+		<section className={classes.about} id="about">
 			<div className={`container ${classes['about-wrapper']}`}>
 				<div className={classes['author-picture']}>
 					<img src="/img/me.jpg" alt="Author picture" />
 				</div>
 				<div className={classes['about-author']}>
-					<p className={classes.title}>My Intro</p>
-					<h2>About me</h2>
-					<hr />
+					<div className={classes.layout}>
+						<p className={classes.title}>My Intro</p>
+						<h2>About me</h2>
+						<hr />
+					</div>
 					<p className={classes.desc}>
 						Hi there! My name is Burak. I&apos;m a sophomore at Duzce
 						University. I&apos;m pursuing a BA degree in computer science with
@@ -56,7 +59,12 @@ const About = () => {
 							</div>
 						</div>
 					</div>
-					<a href="" className="btn download-btn">
+					<a
+						href="https://drive.google.com/file/d/1YYiQ4HErXJKgUAmTLNrWk3GbptZxayh-/view?usp=sharing"
+						target="_blank"
+						rel="noreferrer"
+						className="btn download-btn"
+					>
 						Download CV
 					</a>
 				</div>

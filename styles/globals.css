@@ -15,11 +15,13 @@
 html {
 	/* 10px */
 	font-size: 62.5%;
+	scroll-behavior: smooth;
 }
 
 body {
 	font-family: 'Source Sans Pro', sans-serif;
 	color: #fff !important;
+	background-color: #000;
 }
 
 a {
@@ -35,6 +37,7 @@ ul {
 	width: 100%;
 	max-width: 1100px;
 	margin: 0 auto;
+	padding: 0 2rem;
 }
 
 .btn {
@@ -77,4 +80,15 @@ ul {
 	text-transform: uppercase;
 	color: var(--primary-color);
 	letter-spacing: 2px;
+}
+
+@media (max-width: 768px) {
+	.download-btn {
+		padding: 1rem 2rem;
+	}
+}
+@media (max-width: 600px) {
+	.download-btn {
+		padding: 0.8rem 1.6rem;
+	}
 }

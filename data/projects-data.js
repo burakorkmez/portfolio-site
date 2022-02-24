@@ -9,6 +9,8 @@ export const mainProjects = [
 		title: 'Netflix Clone',
 		desc: 'A React based movie app that mimics the netflix. Allows user to add profile image, change email address and username. Most importantly, user can watch trailers and get related data for movies and series.',
 		builtWith: ['React', 'Firebase', 'MongoDB'],
+		demo: 'https://tmdb-netflix-clone.netlify.app/register',
+		github: 'https://github.com/burakorkmez/netflix-mern-client',
 	},
 	{
 		id: 2,
@@ -21,6 +23,8 @@ export const mainProjects = [
 		desc: "A friendly, project managing website that can be used with teams. Assign projects to your teammates and mark as completed when it's done. Commenting to a project is available. Also, online users can be seen.",
 
 		builtWith: ['React', 'Firebase'],
+		demo: 'https://manageproject-db4f7.web.app/',
+		github: 'https://github.com/burakorkmez/manage-project',
 	},
 	{
 		id: 3,
@@ -33,6 +37,8 @@ export const mainProjects = [
 		desc: 'A photo sharing app just like Pinterest but it is called Binterest. Uses sanity for backend. Users can share, delete and save photos and also comment. Authentication is handled by Google OAuth system. ',
 
 		builtWith: ['React', 'Sanity', 'Tailwind'],
+		demo: 'https://binterestt.netlify.app/',
+		github: 'https://github.com/burakorkmez/binterest-client',
 	},
 ];
 

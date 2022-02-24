@@ -48,3 +48,18 @@
 	display: flex;
 	justify-content: space-between;
 }
+
+@media (max-width: 900px) {
+	.wrapper {
+		/* flex-direction: column; */
+		/* flex-wrap: wrap; */
+		max-width: 30rem;
+		margin-top: 3rem;
+	}
+}
+@media (max-width: 768px) {
+	.wrapper {
+		max-width: 40rem;
+		margin-top: 3rem;
+	}
+}

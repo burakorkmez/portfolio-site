@@ -5,7 +5,7 @@ import OtherProject from './OtherProject';
 
 const Projects = () => {
 	return (
-		<section className={classes['projects-section']}>
+		<section className={classes['projects-section']} id="work">
 			<div className="container">
 				<h2 className={`text-center secondary-heading`}>
 					Some projects I&apos;ve built
