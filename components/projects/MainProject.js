@@ -21,6 +21,7 @@ const MainProject = ({ project }) => {
 				className={`${classes.left} ${
 					project.id % 2 === 0 ? classes.reversed : ''
 				}`}
+				data-aos="fade-up"
 			>
 				<Swiper
 					cssMode={true}
@@ -42,6 +43,7 @@ const MainProject = ({ project }) => {
 				className={`${classes.right} ${
 					project.id % 2 === 0 ? classes.reversed : ''
 				}`}
+				data-aos="fade-up"
 			>
 				<h2 className={classes['project-title']}>{project.title}</h2>
 				<div className={classes.desc}>{project.desc}</div>

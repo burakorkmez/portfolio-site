@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 const OtherProject = ({ project }) => {
 	return (
-		<div className={classes.wrapper}>
+		<div className={classes.wrapper} data-aos="fade-up">
 			<div className={classes.top}>
 				<img src={project.img} alt={'a picture of' + project.img} />
 			</div>

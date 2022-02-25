@@ -1,10 +1,12 @@
-import { useEffect, useState } from 'react';
 import classes from './About.module.css';
 
 const About = () => {
 	return (
 		<section className={classes.about} id="about">
-			<div className={`container ${classes['about-wrapper']}`}>
+			<div
+				className={`container ${classes['about-wrapper']}`}
+				data-aos="fade-up"
+			>
 				<div className={classes['author-picture']}>
 					<img src="/img/me.jpg" alt="Author picture" />
 				</div>

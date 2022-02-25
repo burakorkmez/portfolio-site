@@ -3,7 +3,16 @@ import Contact from '../components/contact/Contact';
 import Hero from '../components/hero/Hero';
 import Projects from '../components/projects/Projects';
 import Head from 'next/head';
+import { useEffect } from 'react';
+
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+
 export default function Home() {
+	useEffect(() => {
+		Aos.init({ duration: 2000 });
+	}, []);
+
 	return (
 		<div>
 			<Head>
