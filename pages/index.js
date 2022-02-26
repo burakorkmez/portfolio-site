@@ -18,7 +18,7 @@ export default function Home() {
 			<Head>
 				<title>Burak Örkmez</title>
 				<meta name="viewport" content="initial-scale=1.0, width=device-width" />
-				<meta charset="utf-8" />
+				<meta charSet="utf-8" />
 			</Head>
 			<Hero />
 			<About />
