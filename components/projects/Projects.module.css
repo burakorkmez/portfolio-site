@@ -91,6 +91,7 @@
 	justify-content: space-around;
 	padding: 0 2rem;
 	margin-top: 5rem;
+	flex-wrap: wrap;
 }
 .right .icon {
 	color: var(--primary-color);

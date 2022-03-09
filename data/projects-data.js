@@ -47,7 +47,7 @@ export const otherProjects = [
 		id: 1,
 		img: '/img/projects-imgs/other-projects/blog.png',
 		title: 'Personal Blog',
-		desc: "Minimal looking blog app which I've built for myself to share some posts releated to web dev.",
+		desc: "Minimal looking blog app which I've built for myself to share some posts related to web dev.",
 		builtWith: ['Next.js', 'Markdown', 'MongoDB'],
 		demo: 'https://burakorkmez.blog/',
 	},
@@ -68,5 +68,14 @@ export const otherProjects = [
 		builtWith: ['React', 'Covid Api'],
 		demo: 'https://coronaanalyzer.netlify.app/',
 		github: 'https://github.com/burakorkmez/covid-19-dashboard',
+	},
+	{
+		id: 4,
+		img: '/img/projects-imgs/other-projects/wordle.png',
+		title: 'Wordle',
+		desc: 'Almost a Wordle clone with all core features.',
+		builtWith: ['HTML', 'CSS', 'JavaScript'],
+		demo: 'https://playwordle.netlify.app',
+		github: 'https://github.com/burakorkmez/wordle-game',
 	},
 ];
