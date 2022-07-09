@@ -25,22 +25,9 @@ const Navbar = () => {
 					<h1 className={classes.logo}>BURAK ÖRKMEZ</h1>
 				</a>
 
-				<figure
-					className={classes.hamburger}
-					onClick={() => setIsMenuOpen((prev) => !prev)}
-				>
-					{!isMenuOpen && (
-						<FontAwesomeIcon
-							icon={faBars}
-							className={classes['hamburger-icon']}
-						/>
-					)}
-					{isMenuOpen && (
-						<FontAwesomeIcon
-							icon={faXmark}
-							className={classes['hamburger-icon']}
-						/>
-					)}
+				<figure className={classes.hamburger} onClick={() => setIsMenuOpen((prev) => !prev)}>
+					{!isMenuOpen && <FontAwesomeIcon icon={faBars} className={classes['hamburger-icon']} />}
+					{isMenuOpen && <FontAwesomeIcon icon={faXmark} className={classes['hamburger-icon']} />}
 				</figure>
 				<nav>
 					<ul className={classes['navbar-list']}>
@@ -59,11 +46,9 @@ const Navbar = () => {
 								Contact
 							</a>
 						</li>
-						<li
-							className={`btn  ${classes['navbar-list-item']} ${classes['btn-resume']}`}
-						>
+						<li className={`btn  ${classes['navbar-list-item']} ${classes['btn-resume']}`}>
 							<a
-								href="https://drive.google.com/file/d/1YYiQ4HErXJKgUAmTLNrWk3GbptZxayh-/view?usp=sharing"
+								href="https://drive.google.com/file/d/1WxYpB3KBngb3-o0-Y89mPBF5e9YcIUaO/view"
 								target="_blank"
 								rel="noreferrer"
 								onClick={() => setIsMenuOpen(false)}
