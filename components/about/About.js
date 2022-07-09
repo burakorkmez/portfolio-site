@@ -1,12 +1,10 @@
 import classes from './About.module.css';
+import Image from 'next/image';
 
 const About = () => {
 	return (
 		<section className={classes.about} id="about">
-			<div
-				className={`container ${classes['about-wrapper']}`}
-				data-aos="fade-up"
-			>
+			<div className={`container ${classes['about-wrapper']}`} data-aos="fade-up">
 				<div className={classes['author-picture']}>
 					<img src="/img/me.jpg" alt="Author picture" />
 				</div>
@@ -17,10 +15,9 @@ const About = () => {
 						<hr />
 					</div>
 					<p className={classes.desc}>
-						Hi there! My name is Burak. I&apos;m a sophomore at Duzce
-						University. I&apos;m pursuing a BA degree in computer science with
-						an expected graduation in 2024. What I&apos;m most passionate about
-						is web technologies. More specifically, front-end development is my
+						Hi there! My name is Burak. I&apos;m a sophomore at Duzce University. I&apos;m pursuing
+						a BA degree in computer science with an expected graduation in 2024. What I&apos;m most
+						passionate about is web technologies. More specifically, front-end development is my
 						main focus.
 					</p>
 					<div className={classes.overview}>
@@ -62,7 +59,7 @@ const About = () => {
 						</div>
 					</div>
 					<a
-						href="https://drive.google.com/file/d/1YYiQ4HErXJKgUAmTLNrWk3GbptZxayh-/view?usp=sharing"
+						href="https://drive.google.com/file/d/1WxYpB3KBngb3-o0-Y89mPBF5e9YcIUaO/view"
 						target="_blank"
 						rel="noreferrer"
 						className="btn download-btn"

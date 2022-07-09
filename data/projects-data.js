@@ -2,9 +2,9 @@ export const mainProjects = [
 	{
 		id: 1,
 		imgs: [
-			'/img/projects-imgs/netflix-clone/desktop.png',
-			'/img/projects-imgs/netflix-clone/register.png',
-			'/img/projects-imgs/netflix-clone/movies.png',
+			'/img/projects-imgs/netflix-clone/desktop.jpg',
+			'/img/projects-imgs/netflix-clone/register.jpg',
+			'/img/projects-imgs/netflix-clone/movies.jpg',
 		],
 		title: 'Netflix Clone',
 		desc: 'A React based movie app that mimics the netflix. Allows user to add profile image, change email address and username. Most importantly, user can watch trailers and get related data for movies and series.',
@@ -15,9 +15,9 @@ export const mainProjects = [
 	{
 		id: 2,
 		imgs: [
-			'/img/projects-imgs/manage-project/dashboard.png',
-			'/img/projects-imgs/manage-project/create.png',
-			'/img/projects-imgs/manage-project/comments.png',
+			'/img/projects-imgs/manage-project/dashboard.jpg',
+			'/img/projects-imgs/manage-project/create.jpg',
+			'/img/projects-imgs/manage-project/comments.jpg',
 		],
 		title: 'Manage Project',
 		desc: "A friendly, project managing website that can be used with teams. Assign projects to your teammates and mark as completed when it's done. Commenting to a project is available. Also, online users can be seen.",
@@ -29,9 +29,9 @@ export const mainProjects = [
 	{
 		id: 3,
 		imgs: [
-			'/img/projects-imgs/binterest/login.png',
-			'/img/projects-imgs/binterest/dashboard.png',
-			'/img/projects-imgs/binterest/create.png',
+			'/img/projects-imgs/binterest/login.jpg',
+			'/img/projects-imgs/binterest/dashboard.jpg',
+			'/img/projects-imgs/binterest/create.jpg',
 		],
 		title: 'Binterest',
 		desc: 'A photo sharing app just like Pinterest but it is called Binterest. Uses sanity for backend. Users can share, delete and save photos and also comment. Authentication is handled by Google OAuth system. ',
@@ -45,7 +45,7 @@ export const mainProjects = [
 export const otherProjects = [
 	{
 		id: 1,
-		img: '/img/projects-imgs/other-projects/blog.png',
+		img: '/img/projects-imgs/other-projects/blog.jpg',
 		title: 'Personal Blog',
 		desc: "Minimal looking blog app which I've built for myself to share some posts related to web dev.",
 		builtWith: ['Next.js', 'Markdown', 'MongoDB'],
@@ -53,7 +53,7 @@ export const otherProjects = [
 	},
 	{
 		id: 2,
-		img: '/img/projects-imgs/other-projects/github.png',
+		img: '/img/projects-imgs/other-projects/github.jpg',
 		title: 'Github User Finder',
 		desc: 'A web app that helps to find the searched github account.',
 		builtWith: ['React', 'Bootstrap'],
@@ -62,7 +62,7 @@ export const otherProjects = [
 	},
 	{
 		id: 3,
-		img: '/img/projects-imgs/other-projects/covid.png',
+		img: '/img/projects-imgs/other-projects/covid.jpg',
 		title: 'Covid-19 Dashboard',
 		desc: "Want to learn covid situation of the world? Then don't look any further.",
 		builtWith: ['React', 'Covid Api'],
@@ -71,7 +71,7 @@ export const otherProjects = [
 	},
 	{
 		id: 4,
-		img: '/img/projects-imgs/other-projects/wordle.png',
+		img: '/img/projects-imgs/other-projects/wordle.jpg',
 		title: 'Wordle',
 		desc: 'Almost a Wordle clone with all core features.',
 		builtWith: ['HTML', 'CSS', 'JavaScript'],

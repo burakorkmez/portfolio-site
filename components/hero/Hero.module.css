@@ -2,12 +2,8 @@
 	/* height: 100vh; */
 	padding: 36rem 0;
 	width: 100%;
-	background-image: linear-gradient(
-			to top,
-			rgba(62, 66, 68, 0.519) 0%,
-			rgba(30, 34, 36, 0.59) 100%
-		),
-		url('../../public/img/hero-section-bg.png');
+	background-image: linear-gradient(to top, rgba(62, 66, 68, 0.519) 0%, rgba(30, 34, 36, 0.59) 100%),
+		url('../../public/img/hero-section-bg.jpg');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
