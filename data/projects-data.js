@@ -49,7 +49,7 @@ export const otherProjects = [
 		title: 'Personal Blog',
 		desc: "Minimal looking blog app which I've built for myself to share some posts related to web dev.",
 		builtWith: ['Next.js', 'Markdown', 'MongoDB'],
-		demo: 'https://burakorkmez.blog/',
+		demo: 'https://my-personal-blog-burakorkmez.vercel.app/',
 	},
 	{
 		id: 2,
