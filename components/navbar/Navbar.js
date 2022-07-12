@@ -48,9 +48,10 @@ const Navbar = () => {
 						</li>
 						<li className={`btn  ${classes['navbar-list-item']} ${classes['btn-resume']}`}>
 							<a
-								href="https://drive.google.com/file/d/1WxYpB3KBngb3-o0-Y89mPBF5e9YcIUaO/view"
+								href="/burakork-resume.pdf"
 								target="_blank"
 								rel="noreferrer"
+								download
 								onClick={() => setIsMenuOpen(false)}
 							>
 								Resume
